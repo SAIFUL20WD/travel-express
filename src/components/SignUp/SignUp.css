@@ -1,0 +1,36 @@
+.sign-up-container {
+    border: 1px solid lightgray;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.sign-up-container h2 {
+    text-align: start;
+    margin-left: 50px;
+}
+.sign-up-form input{
+    width: 500px;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    outline: none;
+    margin: 15px 0;
+    padding: 5px 0px;
+}
+.sign-up-form input::placeholder {
+    color: #000;
+}
+#sign-up-submit {
+    background-color: #ff6e40;
+    color: #fff;
+    border: none;
+    padding: 14px 0px;
+    cursor: pointer;
+}
+@media (max-width: 640px){
+    .sign-up-container {
+        max-width: 400px;
+    }
+    .sign-up-form input {
+        width: 300px;
+    }
+}   

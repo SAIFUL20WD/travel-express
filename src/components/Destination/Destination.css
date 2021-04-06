@@ -1,0 +1,114 @@
+.destination-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: -15px auto;
+    border-top: 2px solid lightgray;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.destination-search-container {
+    text-align: start;
+    max-width: 400px;
+    max-height: 250px;
+    background-color: #efefef;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+.destination-form input{
+    width: 92%;
+    border: none;
+    outline: none;
+    margin: 10px;
+    padding: 15px 0px 15px 10px;
+}
+.destination-form label {
+    margin: 10px;
+}
+.destination-form input::placeholder {
+    color: #000;
+}
+#destination-submit {
+    background-color: #ff6e40;
+    color: #fff;
+    border: none;
+    padding: 14px 0px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.ride-book-container {
+    text-align: start;
+    background-color: #efefef;
+    min-width: 400px;
+    min-height: 250px;
+    background-color: #efefef;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+.destination-name {
+    background-color: #ff6e40;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+.ride-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 5px;
+}
+.ride-info-container p {
+    font-weight: 600;
+}
+.ride-details {
+    display: flex;
+    align-items: center;
+}
+.ride-details div {
+    margin: 5px 10px;
+}
+.ride-image-container img {
+    width: 100px;
+}
+.ride-capacity-image img {
+    width: 25px;
+}
+.ride-capacity-count p {
+    margin: -16px;
+}
+.ride-rent {
+    margin-right: 20px;
+}
+.map {
+    margin-left: 20px;
+}
+.back-btn {
+    margin: 10px auto;
+}
+@media (min-width: 768px){
+    .ride-book-container {
+        margin: auto 40px;
+    }
+}
+@media (max-width: 720px){
+    .destination-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .destination-search-container {
+        margin-bottom: 20px;
+    }
+    .ride-book-container {
+        max-width: 400px;
+        min-height: 250px;
+        margin-bottom: 20px;
+    }
+    .map {
+        margin: 0px;
+    }
+}

@@ -1,0 +1,30 @@
+.home-container {
+    margin-top: -20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+.rides-container {
+    max-width: 1200px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 200px auto;
+}
+@media (max-width: 992px){
+    .rides-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px 100px 50px 100px
+    }
+}
+@media (max-width: 640px){
+    .rides-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+    }
+    .home-container {
+        height: 100%;
+        padding-bottom: 20px;
+    }
+}
