@@ -12,6 +12,7 @@ const GoogleAuth = () => {
     const { from } = location.state || { from: { pathname: "/" } };
 
     initializeLoginFramework()
+    
     const handleGoogleSignIn = () => {
         googleSignIn().then(res => {
             setLoggedInUser(res)

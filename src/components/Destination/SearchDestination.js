@@ -36,6 +36,8 @@ const SearchDestination = ({setSearchDestination, setGetDestination}) => {
                 <input type="text" name="pickFrom" onBlur={handleSearch} placeholder="Mirpur 1"/>
                 <label htmlFor="PickTo">Pick To</label>
                 <input type="text" name="pickTo" onBlur={handleSearch} placeholder="Danmondi"/>
+                <label htmlFor="date">Select Travel Date</label>
+                <input type="date" name="date" id=""/>
                 <input type="submit" value="Search" id="destination-submit"/>
             </form>
         </div>

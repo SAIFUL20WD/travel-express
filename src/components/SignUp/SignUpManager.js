@@ -29,25 +29,6 @@ export const googleSignIn = () => {
     })
 }
 
-// export const facebookSignIn = () => {
-//     const facebook = new firebase.auth.FacebookAuthProvider();
-//     return firebase.auth().signInWithPopup(facebook)
-//     .then( (result) => {
-//         const {displayName, email, photoURL} = result.user
-//         const signedInUser = {
-//         isSignedIn: true, 
-//         name: displayName, 
-//         email: email, 
-//         photo: photoURL,
-//         success: true
-//         }
-//         return signedInUser
-//     })
-//     .catch((error) => {
-//         console.log(error.message);
-//     });
-// }
-
 const updateUserName = (name) => {
     const user = firebase.auth().currentUser;
     user.updateProfile({
